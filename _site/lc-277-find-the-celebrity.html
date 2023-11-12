@@ -110,17 +110,15 @@ After determining a candidate between 0 and 1, we need to compare the winning ca
 <p>For loop where j traverses all numbers:</p>
 
 <ul>
-  <li>
-<code class="language-plaintext highlighter-rouge">if knows(candidate, j) == 1</code> we eliminate the current candidate and set <code class="language-plaintext highlighter-rouge">candidate = j</code>.</li>
-  <li>
-<code class="language-plaintext highlighter-rouge">if knows(candidate, j) == 0</code> we eliminate j and keep the current candidate.</li>
+  <li><code class="language-plaintext highlighter-rouge">if knows(candidate, j) == 1</code> we eliminate the current candidate and set <code class="language-plaintext highlighter-rouge">candidate = j</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">if knows(candidate, j) == 0</code> we eliminate j and keep the current candidate.</li>
 </ul>
 
 <p>After running up all numbers, we will get a final candidate X. Also we know that, if a celebrity exists, it must be X.</p>
 
 <p>Here is a tree that demonstrates all possible paths. At each level we will add a new number to compare with, so the height/time cost is theta(n).</p>
 
-<p><img src="LC277.png" alt=""></p>
+<p><img src="LC277.png" alt="" /></p>
 
 <p>Are we done? No. This final candidate X is just our best guess! Remember to check if X is the real celebrity.</p>
 
@@ -163,16 +161,13 @@ Check if knows(final candidate, k) == 0 &amp;&amp; knows(k, final candidate) == 
 </div>
 <div class="post-footer">
   <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
-<div data-purplecoat="shiori" data-purplecoat-label="post-footer.html">
+<!-- <div data-purplecoat="shiori" data-purplecoat-label="post-footer.html">
 <h3 class="section-header">
   Post Footer
 </h3>
 <div class="well well-sm">
-  <!-- Emoji is not available outside markdown files, so using "include ribbon.html" instead -->
-<img class="emoji" title=":ribbon:" alt=":ribbon:" src="https://assets.github.com/images/icons/emoji/unicode/1f380.png" height="20" width="20" align="absmiddle">
- You can customize this section in <code>_includes</code> → <code>post-footer.html</code>.
 </div>
-</div>
+</div> -->
 </div>
 
   
@@ -181,7 +176,7 @@ Check if knows(final candidate, k) == 0 &amp;&amp; knows(k, final candidate) == 
         <div class="col-md-6 post-nav">
           <h3 class="section-header">
             Older
-            <span class="text-muted"> · </span>
+            <span class="text-muted"> &middot; </span>
             <a href="/archive">View Archive (25)</a>
           </h3>
           <h2 class="post-title-link"><a href="/thoughts-after-layoff">认清现实，并超越现实</a></h2>
@@ -249,7 +244,7 @@ Check if knows(final candidate, k) == 0 &amp;&amp; knows(k, final candidate) == 
         <div class="col-sm-12 text-center">
           <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
 <div data-purplecoat="shiori" data-purplecoat-label="footer.html">
-©2023.
+&copy;2023.
 Built with <a href="http://jekyllrb.com/">Jekyll</a> and
 <a href="https://github.com/ellekasai/shiori">Shiori Theme</a>.
 </div>

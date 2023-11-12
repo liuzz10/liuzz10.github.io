@@ -61,7 +61,7 @@
 
 <p><a href="https://leetcode.com/problems/gas-station/">Puzzle link</a></p>
 
-<p><img src="LC134-question.png" alt=""></p>
+<p><img src="LC134-question.png" alt="" /></p>
 
 <p>There are N gas stations along a circular route, where the amount of gas at station i is gas[i].</p>
 
@@ -164,7 +164,7 @@
 </code></pre></div></div>
 
 <h2 id="property-2-if-pathi---j-failed-it-will-also-fail-if-we-start-with-any-station-between-i-and-j">Property 2. If path(#i -&gt; #j) failed, it will also fail if we start with any station between #i and #j.</h2>
-<p><img src="LC134-p2.png" alt=""></p>
+<p><img src="LC134-p2.png" alt="" /></p>
 
 <p>Consider this graph as an example: if we start from #1:</p>
 <ul>
@@ -174,7 +174,7 @@
 
 <p>With the brute force idea, if #1 doesn’t work out we have to start with #2 to check. Is it necessary? No. We don’t have to check from #2 because we’ve known that it won’t pass #4.</p>
 
-<p><img src="LC134-p2-2.png" alt=""></p>
+<p><img src="LC134-p2-2.png" alt="" /></p>
 
 <p>Why? Starting from #2 can be equal to starting from #1, adding 1 gas at #1 (originally gas = 2 at #1). That equals to, #1 doesn’t provide us any benefits.</p>
 
@@ -192,7 +192,7 @@
 
 <p>It sounds unbelievable. Let’s prove. In this graph, the whole route is divided by green section path(#X -&gt; #n) and blue section path(#n -&gt; #X-1). We want to prove that if the green section works, the blue section must work.</p>
 
-<p><img src="LC134-p3.png" alt=""></p>
+<p><img src="LC134-p3.png" alt="" /></p>
 
 <h3 id="notations">Notations</h3>
 
@@ -224,7 +224,7 @@
     
 (If the above doesn't format, see the image below.) -->
 
-<p><img src="LC134-proof-sigma.png" alt=""></p>
+<p><img src="LC134-proof-sigma.png" alt="" /></p>
 
 <p>This formula shows that the sum of x remaining gas at #n and the gas being added must be able to cover the cost during the blue section. Therefore, as long as the green section works, the blue section must work.</p>
 
@@ -236,16 +236,13 @@
 </div>
 <div class="post-footer">
   <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
-<div data-purplecoat="shiori" data-purplecoat-label="post-footer.html">
+<!-- <div data-purplecoat="shiori" data-purplecoat-label="post-footer.html">
 <h3 class="section-header">
   Post Footer
 </h3>
 <div class="well well-sm">
-  <!-- Emoji is not available outside markdown files, so using "include ribbon.html" instead -->
-<img class="emoji" title=":ribbon:" alt=":ribbon:" src="https://assets.github.com/images/icons/emoji/unicode/1f380.png" height="20" width="20" align="absmiddle">
- You can customize this section in <code>_includes</code> → <code>post-footer.html</code>.
 </div>
-</div>
+</div> -->
 </div>
 
   
@@ -254,7 +251,7 @@
         <div class="col-md-6 post-nav">
           <h3 class="section-header">
             Older
-            <span class="text-muted"> · </span>
+            <span class="text-muted"> &middot; </span>
             <a href="/archive">View Archive (25)</a>
           </h3>
           <h2 class="post-title-link"><a href="/lc-277-find-the-celebrity">LC-277 Find the Celebrity</a></h2>
@@ -320,7 +317,7 @@
         <div class="col-sm-12 text-center">
           <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
 <div data-purplecoat="shiori" data-purplecoat-label="footer.html">
-©2023.
+&copy;2023.
 Built with <a href="http://jekyllrb.com/">Jekyll</a> and
 <a href="https://github.com/ellekasai/shiori">Shiori Theme</a>.
 </div>
